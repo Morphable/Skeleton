@@ -3,7 +3,13 @@
     "description": "Application skeleton",
     "license": "MIT",
     "require": {
-        "php" : "~7.0"
+        "php" : "~7.0",
+        "morphable/simple-routing": "^1.1",
+        "morphable/simple-container": "^1.0",
+        "morphable/simple-database": "^1.0",
+        "morphable/simple-cache": "^1.0",
+        "morphable/simple-view": "^1.0",
+        "morphable/simple-debugger": "^1.0"
     },
 	"require-dev": {
 		"phpunit/phpunit" : ">=5.4.3",
