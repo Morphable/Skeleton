@@ -10,5 +10,8 @@ use \Morphable\SimpleDatabase;
 return [
     'cache' => new SimpleCache(Application::getPath('cache')),
     'view' => new SimpleView(Application::getPath('views')),
-    'debug' => new SimpleDebugger()
+    'debug' => new SimpleDebugger(),
+    'database' => new SimpleDatabase("sqlite:" . Application::getPath('data') . '/app.db', null, null, null, function ($e) {
+        die($e->getMessage());
+    })
 ];

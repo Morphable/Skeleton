@@ -17,6 +17,7 @@ class Application
         self::$paths['config'] = $root . '/config';
         self::$paths['app'] = $root . '/App';
         self::$paths['public'] = $root . '/public';
+        self::$paths['data'] = $root . '/data';
         self::$paths['views'] = $root . '/views';
         self::$paths['cache'] = $root . '/cache';
     }
