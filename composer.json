@@ -1,5 +1,5 @@
 {
-    "name": "morphable/skeleton",
+    "name": "app/app",
     "description": "Application skeleton",
     "license": "MIT",
     "require": {
