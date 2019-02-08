@@ -1,0 +1,7 @@
+#!/usr/bin/php
+<?php
+
+$port = isset($argv[1]) ? $argv[1] : 8000;
+
+echo "Running server on port {$port}\n";
+shell_exec("php -S localhost:{$port} public/index.php");
