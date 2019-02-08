@@ -1,14 +1,17 @@
 <?php
 
+use \App\Infrastructure\Application;
 use \Morphable\SimpleRouting;
 use \Morphable\SimpleRouting\Builder;
-use \App\Infrastructure\Application;
+use \Symfony\Component\Dotenv\Dotenv;
 
 // require vendor
 require __DIR__ . '/../vendor/autoload.php';
 
 // intialize application
 Application::initialize(__DIR__ . '/..');
+
+(new Dotenv())->load(Application::getPath('root') . '/.env');
 
 // get predefined services and add them to application
 $services = require Application::getPath('config') . '/services.php';
