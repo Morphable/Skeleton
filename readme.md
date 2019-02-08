@@ -11,3 +11,6 @@ Example project structure.
 - ```$ php serve``` Optionally add a port after serve
 
 That's it.
+
+### Notes
+- This is NOT a full fledged framework, these are seperate components. This skeleton is my personal setup and does not have to be the same in order to use these packages.
